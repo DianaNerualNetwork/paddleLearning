@@ -1,0 +1,26 @@
+_base_: '../_base_/car2022.yml'
+
+model:
+  type: DDRNet_23_slim
+  num_classes: 4
+
+
+
+loss:
+  types:
+    - type: MixedLoss
+      losses:
+        - type: OhemCrossEntropyLoss
+        - type: LovaszSoftmaxLoss
+      coef: [0.6,0.4]
+  coef: [1]
+
+
+batch_size: 8
+iters: 300000
+
+lr_scheduler:
+  type: CosineAnnealingDecay
+  learning_rate: 0.05
+  T_max : 60000
+  eta_min : 0
