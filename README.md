@@ -17,7 +17,7 @@ English | [简体中文](README_CN.md)
 </div>
 
 <div> 
-本篇是基于ddrnet23-slim去完成第十七届智能车线上赛的文档，文中的pdparams为练到miou71的测试文档，数据集请自行收集测试，代码为ddrnet23-slim paddle实现，中间添加了Coordinate attention注意力机制，可自行删除。
+本篇是基于ddrnet23-slim去完成第十七届智能车线上赛的文档，文中的pdparams为练到miou71的测试文档，数据集请自行收集测试，代码为ddrnet23-slim paddle实现，中间添加了Coordinate attention注意力机制，可自行删除。同时需要自行拉取paddleseg进行二次开发
 </div>
 
 ## News <img src="./docs/images/seg_news_icon.png" width="40"/>
